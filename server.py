@@ -12,6 +12,10 @@ def emot_detector():
     text_to_analyze = request.args.get('textToAnalyze')
     response = emotion_detector(text_to_analyze)
 
+    # Manejo de errores cuando la emoción dominante es None
+    if response['dominant_emotion'] is None:
+        return "Invalid text! Please try again!"
+
 
     #  Retorno del texto con el formato requerido
     return (
