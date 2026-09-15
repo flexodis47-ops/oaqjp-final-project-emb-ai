@@ -1,3 +1,4 @@
+'''Este archivo es el servidor que presenta el interfaz HTML'''
 from flask import Flask, render_template, request
 from EmotionDetection.emotion_detection import emotion_detector
 
