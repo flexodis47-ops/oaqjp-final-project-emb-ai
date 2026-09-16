@@ -1,6 +1,6 @@
 import requests  # Importa la librería request para manejar HTTP requests
 import json
-    # Define una función llamada emotion_detector que toma una entrada de texto (text_to_analyse)
+    # Define una función llamada emotion_detector que toma una entrada de texto (text_to_analyze)
 def emotion_detector(text_to_analyze): 
     # URL del servicio EmotionPredict
     url = 'https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict'  
